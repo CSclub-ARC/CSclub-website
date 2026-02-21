@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(#02026e,rgb(2, 2, 178),black);
+    background-size: auto 600%;
 }
 .header{
     border-style: outset;
