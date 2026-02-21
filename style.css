@@ -1,0 +1,43 @@
+body{
+    background: linear-gradient(#02026e,rgb(2, 2, 178),black);
+    background-size: auto 600%;
+}
+.header{
+    border-style: outset;
+    text-align: center;
+    border-width: 5px;
+    border-radius: 15px;
+    background: linear-gradient(  90deg,
+    #00f0ff,
+    #0088ff,
+    #00f0ff,
+    #66ccff);
+    background-clip: text;
+    background-size:300% 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.35s ease;
+    border-spacing: 20px ;
+    text-shadow: 
+    0 0 5px rgba(0, 240, 255, 0.7),
+    0 0 10px rgba(0, 136, 255, 0.6),
+    0 0 20px rgba(0, 240, 255, 0.4);
+    animation: electricFlow 4s linear infinite;
+}
+.header:hover{
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255, 255, 0,8s);
+    transform: scale(1.05 )translateY(-3px);
+}
+.discord-btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #5855f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.discord-btn:hover{
+    transform: scale(1.05)translateY(-3px);
+}
+
