@@ -1,3 +1,6 @@
+#Visual Studio
+.vscode
+
 # Logs
 logs
 *.log
