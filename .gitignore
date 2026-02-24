@@ -1,5 +1,9 @@
-#Visual Studio
-.vscode
+#VisualStudios
+.vs*
+*.vcx*
+*.sln
+x64
+x86
 
 # Logs
 logs
