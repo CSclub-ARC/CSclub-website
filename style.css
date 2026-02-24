@@ -3,14 +3,13 @@ body{
     background-size: auto 600%;
 }
 p{
+    font-family: 'Courier New', Courier, monospace;
     color: white;
     text-align: center;
 }
 .header{
-    border-style: outset;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    border-width: 5px;
-    border-radius: 15px;
     background: linear-gradient(  90deg,
     #00f0ff,
     #0088ff,
