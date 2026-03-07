@@ -47,7 +47,7 @@ const commands = {
   events() {
     // You can change this to real info later
     printLine("Meetings:", "success");
-    printLine("• Weekly meeting — check Discord announcements for time/location.");
+    printLine("• Weekly meeting — STEM 307 on Wednesdays 4:30 - 5:30PM.");
     printLine("• Bring a laptop if you can. Beginners welcome.");
   },
 
@@ -59,9 +59,8 @@ const commands = {
 
   projects() {
     printLine("Project tracks:", "success");
-    printLine("• Web Dev (HTML/CSS/JS)");
-    printLine("• Game Dev (Unity/Unreal)");
-    printLine("• Competitive Programming");
+    printLine("• Club website (HTML/CSS/JS)");
+    printLine("• Game Jam (Unity/Unreal)");
   },
 
   clear() {
