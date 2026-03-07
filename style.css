@@ -1,6 +1,33 @@
 body{
-    background: linear-gradient(#02026e,rgb(2, 2, 178),black);
-    background-size: auto 600%;
+  margin: 0;
+  height: 100vh;
+
+  background: linear-gradient(
+    270deg,
+    #0064fb,
+    #025ab3,
+    #004c99,
+    #0073e6,
+    #005bb5
+  );
+
+  background-size: 600% 600%;
+
+  animation: waveGradient 10s ease infinite;
+
+  color: white;
+  font-family: Arial, sans-serif;
+}
+@keyframes waveGradient {
+  0% {
+    background-position: 0% 75;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 p{
     font-family: 'Courier New', Courier, monospace;
@@ -34,8 +61,8 @@ p{
 }
 .fa-brands.fa-discord{
     display: inline-block;
-    padding: 12px 12px;
-    size: 20px 20px;
+    padding: 9px 9px;
+    size: 10px 10px;
     background-color: #5855f2;
     color: white;
     text-decoration: none;
@@ -44,5 +71,85 @@ p{
 .fa-brands.fa-discord:hover{
     transform: scale(1.05)translateY(-3px);
 }
+.terminal {
+  width: min(900px, 92vw);
+  margin: 40px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.08);
+}
 
+.terminal__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(10, 14, 25, 0.92);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+}
+.dot.red { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green { background: #28c840; }
+
+.terminal__title {
+  margin-left: 6px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.terminal__screen {
+  height: 340px;
+  padding: 14px;
+  overflow-y: auto;
+  background: rgba(0, 8, 20, 0.92);
+  color: rgba(235, 245, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.55;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.terminal__line {
+  margin: 0 0 6px 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal__line.dim { color: rgba(235,245,255,0.65); }
+.terminal__line.error { color: rgba(255,140,140,0.95); }
+.terminal__line.success { color: rgba(140,255,190,0.95); }
+
+.terminal__inputRow {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(10, 14, 25, 0.92);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.terminal__prompt {
+  color: rgba(140, 200, 255, 0.95);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.terminal__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(235, 245, 255, 0.95);
+  font-size: 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.terminal__input::placeholder {
+  color: rgba(235,245,255,0.35);
+}
 
